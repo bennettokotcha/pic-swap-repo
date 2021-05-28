@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ninja to Cat</title>
+        <link rel="stylesheet" type="text/css" href="NinjatoCat.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('img').click(function(){
+                    var temp = $(this).attr("data-alt-src");
+                    $(this).attr("data-alt-src", $(this).attr("src"));
+                    $(this).attr("src", temp);
+                })
+            })
+        </script>
+    </head>    
+        <body id="wrapper">
+            <img id="img1" src="1drogon.jpeg"  data-alt-src="1white-walker.jpeg"/>
+            <img id="img2" src="2drogon.jpeg" data-alt-src="2white-walker.jpeg"/>
+            <img id= "img3" src="3drogon.jpeg" data-alt-src="3white-walker.jpeg"/>
+        </body>
+</html>        
